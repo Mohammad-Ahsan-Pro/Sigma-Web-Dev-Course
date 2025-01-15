@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images, Tables & Lists</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img height="230" src="Train.png" alt="Train Image">
+    <br>
+
+    <table>
+        <caption>PERSON DETAILS</caption>
+        <!-- rowspan doesn't work in thead but colspan works -->
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>M.Ahsan</td>
+                <td>Programmer</td>
+                <td>22.5</td>
+            </tr>
+            <tr>
+                <td colspan="2">M.Ali</td>
+                <td rowspan="2">Programmer</td>
+            </tr>
+            <tr>
+                <td colspan="2">M.Sahil</td>
+            </tr>
+        </tbody>
+
+        <!-- rowspan doesn't work in tfoot but colspan works -->
+        <tfoot>
+            <tr>
+                <td colspan="2">Afaq</td>
+                <td>PROGRAMMER</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <ul type="square">
+        <li>Harry</li>
+        <li>Rohan</li>
+        <li>Shubam</li>
+    </ul>
+    <ol type="A">
+        <li>Harry</li>
+        <li>Rohan</li>
+        <li>Shubam</li>
+    </ol>
+
+    <h1>HTML Definition List</h1>
+    <dl>
+        <dt>HTML</dt>
+        <dd>HTML is web Markup Language named Hyper-text-Makrup-Language</dd>
+
+        <dt>CSS</dt>
+        <dd>CSS is styling of Markup written in HTML</dd>
+    </dl>
+</body>
+</html>
